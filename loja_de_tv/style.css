@@ -1,0 +1,267 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+    background-image: linear-gradient(120deg, #bdeefa, #0063ad);
+    background-attachment: fixed;
+}
+
+.cabecalho {
+    padding: 5px;
+    font-size: 20px;
+    margin: 1px;
+    display: flex;
+    flex: 1 1 100vw;
+    background-color: #084d6e;
+    border: 3px solid #111e2a;
+    border-top: none;
+    border-left: none;
+    border-radius: 20px;
+}
+
+.conteudoCabecalho {
+    width: 98%;
+    padding-left: 10px;
+    color: white;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: #084d6e;
+    border: 3px solid #111e2a;
+    border-top: none;
+    border-left: none;
+    border-radius: 30px;
+    color: white;
+}
+
+.botaoLogin{
+    padding: 15px;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    border-radius: 20px;
+}
+
+.botaoAcessar {
+    background-color: #4682b4;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #111e2a;
+    border-top: none;
+    border-left: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.botaoAcessar:hover {
+    background-color: #82dcff;
+    cursor: pointer;
+}
+
+.menu{
+    padding: 5px;
+    display: flex;
+    border-radius: 20px;
+    margin: 1px;
+    flex: 1 1 100px;
+}
+.conteudoMenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.botaoMenu{
+    padding: 5px;
+    margin: 1px;
+    width: 180px;
+    border: 2px solid #000000;
+    background-color: #084d6e;
+    border-radius: 20px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.botaoMenu:hover{
+    background-color: rgb(106, 196, 248);
+}
+.tituloMenu{
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3px;
+    background-color: #084d6e;
+    color: #ffffff;
+    font-weight: bold;
+}
+.conteudo{
+    padding: 10px;
+    display: flex;
+    border-radius: 20px;
+    margin: 1px;
+    flex: 20 1 500px;
+    border: 3px solid rgb(56, 89, 180);
+    background: #ffffff;
+    height: auto;
+}
+.lado{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    background-color: rgb(255, 245, 152);
+    margin: 1px;
+    flex: 1 1 200px;
+}
+.rodape{
+    padding: 10px;
+    font-size: 20px;
+    margin: 1px;
+    display: flex;
+    flex: 1 1 100vw;
+    background-color: #084d6e;
+    border: 3px solid #000000;
+    border-bottom: none;
+    border-left: none;
+    border-radius: 20px;
+    color: white;
+}
+@media only screen and (max--widht:923px){
+    main{
+        height: calc(100vh - 330px);
+    }
+    aside{
+        flex: 1 1 100vw;
+        height: 100px;
+    }
+}
+@media only screen and (max--widht:717px){
+    nav{
+        height: 100px;
+    }
+    main{
+        height: calc(100vh - 436px);
+    }
+}
+
+.tituloProduto{
+    width: 100%;
+    text-justify: center;
+    background-color: red;
+}
+
+.produto{
+    padding: auto;
+    width: 100%;
+}
+
+.inserirProduto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.elemento{
+    width: 300px;
+    height: 350px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fotoElemento{
+    width: 100%;
+    height: 200px;
+}
+.textoElemento{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.conteudoEspecifico{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.conteudoRodape{
+    width: 100%;
+    height: 100%;
+}
+.filaVenda{
+    padding: 5px;
+    width: 180px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+a{
+    text-decoration: none;
+}
+.sair{
+    text-decoration: none;
+    color: white;
+}
+.botaoFilaVenda{
+    text-decoration: none;
+    color: white;
+}
+
+.botaoConfirmacao{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: green;
+    font-size: large;
+    color: white;
+}
+
+.botaoConfirmacao:hover{
+    background-color: greenyellow;
+}
+
+.botaoCancelamento{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: rgb(255, 0, 0);
+    font-size: large;
+    color: white;
+}
+
+.botaoCancelamento:hover{
+    background-color: rgb(253, 136, 3);
+}
+
+.botaoAlterar{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: orange;
+    font-size: large;
+    color: white;
+}
+
+.botaoAlterar:hover{
+    background-color: rgb(236, 253, 3);
+}
